@@ -7,7 +7,7 @@
 clear choice
 menu Custom Options
 item --gap Windows PE
-item option_hirens ${space} Hiren's BootCD
+item option_hirens ${space} Hiren's BootCD (Uni Aachen)
 choose choice || goto exit
 echo ${cls}
 goto ${choice}
