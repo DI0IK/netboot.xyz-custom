@@ -3,10 +3,20 @@
 ### netboot.xyz-custom menu
 ###
 
-:start
-echo Hello world!
-sleep 10
-goto custom_exit
+:custom
+clear choice
+menu Custom Options
+item --gap Windows PE
+item option_hirens ${space} Hiren's BootCD
+choose choice || goto exit
+echo ${cls}
+goto ${choice}
+goto exit
 
-:custom_exit
+:option_hirens
+kernel https://boot.netboot.xyz/memdisk raw iso
+initrd https://www.hirensbootcd.org/files/HBCD_PE_x64.iso
+boot || goto exit
+
+:exit
 exit 0
