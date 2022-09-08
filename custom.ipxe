@@ -15,7 +15,7 @@ goto exit
 
 :option_hirens
 kernel https://boot.netboot.xyz/memdisk raw iso
-initrd https://www.hirensbootcd.org/files/HBCD_PE_x64.iso
+initrd https://appuals.com/hirensbootcd/HBCD_PE_x64.iso
 boot || goto exit
 
 :exit
