@@ -14,7 +14,6 @@ goto ${choice}
 goto exit
 
 :option_hirens
-kernel https://boot.netboot.xyz/images/windows/winpe/wimboot
 set win_base_url https://github.com/netbootxyz/asset-mirror/releases/download/v1.0.1-0570770e/
 imgfree
 kernel https://boot.netboot.xyz/wimboot
